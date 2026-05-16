@@ -1,0 +1,48 @@
+---
+// src/layouts/BaseLayout.astro
+interface Props {
+  title?: string;
+}
+const { title = 'Portafolio — Dylan Fernandez' } = Astro.props;
+---
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/styles/global.css" />
+</head>
+<body>
+  <!-- CRT + grid overlays rendered via CSS on body pseudo-elements -->
+
+  <!-- Page transition overlay -->
+  <div class="page-transition" id="transition"></div>
+
+  <!-- Code viewer modal -->
+  <div class="modal-overlay" id="codeModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <span class="modal-filename" id="modal-filename">archivo</span>
+        <button class="modal-close" onclick="closeModal()">✕ CERRAR</button>
+      </div>
+      <div class="modal-body">
+        <div class="code-block">
+          <div class="code-lines" id="modal-lines"></div>
+          <div class="code-content" id="modal-code"></div>
+        </div>
+      </div>
+      <div class="modal-dl-bar">
+        <button class="repo-btn dl" id="modal-dl-btn">⬇ DESCARGAR ARCHIVO</button>
+      </div>
+    </div>
+  </div>
+
+  <slot />
+</body>
+</html>

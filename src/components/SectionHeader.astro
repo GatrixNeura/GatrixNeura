@@ -1,0 +1,12 @@
+---
+// src/components/SectionHeader.astro
+interface Props {
+  label: string;
+  style?: string;
+}
+const { label, style } = Astro.props;
+---
+<div class="section-header" style={style}>
+  <h2><span>//</span> {label}</h2>
+  <div class="section-line"></div>
+</div>

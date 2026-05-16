@@ -1,0 +1,29 @@
+---
+// src/components/ProjectCard.astro
+interface Props {
+  index: number;
+  tag: string;
+  title: string;
+  desc: string;
+  tech: string[];
+  emoji: string;
+  gradient: string;
+}
+const { index, tag, title, desc, tech, emoji, gradient } = Astro.props;
+---
+<div class="project-card" onclick={`openProject(event, ${index})`}>
+  <div class="card-media">
+    <div class="card-img" style={`background: ${gradient}`}>{emoji}</div>
+    <div class="card-overlay">
+      <div class="card-overlay-btn">VER PROYECTO</div>
+    </div>
+  </div>
+  <div class="card-content">
+    <div class="card-tag">{tag}</div>
+    <div class="card-title">{title}</div>
+    <div class="card-desc">{desc}</div>
+    <div class="card-tech">
+      {tech.map((t) => <span class="tech-badge">{t}</span>)}
+    </div>
+  </div>
+</div>
