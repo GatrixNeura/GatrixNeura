@@ -53,7 +53,7 @@ export const projects: Project[] = [
       },
       {
         ext: 'CS', name: 'WorldGenerator.cs', size: '28 KB',
-        code: `using UnityEngine;\n\npublic class WorldGenerator : MonoBehaviour\n{\n    public static WorldGenerator Instance;\n    public int width = 512;\n    public int height = 512;\n    public float scale = 50f;\n\n    private float[,] heightMap;\n\n    void Awake() => Instance = this;\n\n    public void Generate(int seed)\n    {\n        heightMap = GenerateHeightMap(seed);\n        ApplyTerrainMesh();\n        PlaceVegetation();\n        Debug.Log($"Terreno generado: {width}x{height}");\n    }\n\n    float[,] GenerateHeightMap(int seed)\n    {\n        float[,] map = new float[width, height];\n        System.Random rng = new System.Random(seed);\n        float ox = (float)rng.NextDouble() * 9999f;\n        float oy = (float)rng.NextDouble() * 9999f;\n        for (int x = 0; x < width; x++)\n            for (int y = 0; y < height; y++)\n                map[x, y] = Mathf.PerlinNoise((float)x / width * scale + ox, (float)y / height * scale + oy);\n        return map;\n    }\n\n    void ApplyTerrainMesh() { /* mesh generation */ }\n    void PlaceVegetation()  { /* vegetation scatter */ }\n}`,
+        code: `using UnityEngine;\n\npublic class WorldGenerator : MonoBehaviour\n{\n    public static WorldGenerator Instance;\n    public int width = 512;\n    public int height = 512;\n    public float scale = 50f;\n\n    private float[,] heightMap;\n\n    void Awake() => Instance = this;\n\n    public void Generate(int seed)\n    {\n        heightMap = GenerateHeightMap(seed);\n        ApplyTerrainMesh();\n        PlaceVegetation();\n        Debug.Log($"Terreno generado: {width}x{height}");\n    }\n\n    float[,] GenerateHeightMap(int seed)\n    {\n        float[,] map = new float[width, height];\n        System.Random rng = new System.Random(seed);\n        float ox = (float)rng.NextDouble() * 9999f;\n        float oy = (float)rng.NextDouble() * 9999f;\n        for (int x = 0; x < width; x++)\n            for (int y = 0; y < height; y++)\n                map[x, y] = Mathf.PerlinNoise((float)x / width * scale + ox, (float)y / height * scale + oy);\n        return map;\n    }\n\n    void ApplyTerrainMesh() { }\n    void PlaceVegetation()  {}\n}`,
       },
       {
         ext: 'JSON', name: 'world_config.json', size: '4 KB',
@@ -65,7 +65,7 @@ export const projects: Project[] = [
       },
     ],
   },
-  {
+  /*{
     genre: '// SHOOTER · ROGUELITE',
     title: 'NEON DESCENT',
     cardTag: '// SHOOTER · ROGUELITE',
@@ -208,5 +208,5 @@ export const projects: Project[] = [
         code: `extends Node\n# AIEngine.gd — Minimax con poda Alfa-Beta\n\nconst MAX_DEPTH = 4\nconst INF = 999999\n\nfunc get_best_move(state: Dictionary, is_maximizing: bool) -> Dictionary:\n    var best_move = {}\n    var best_val = -INF if is_maximizing else INF\n    var alpha = -INF\n    var beta  = INF\n    for move in get_all_moves(state, is_maximizing):\n        var new_state = apply_move(state, move)\n        var val = minimax(new_state, MAX_DEPTH - 1, alpha, beta, not is_maximizing)\n        if is_maximizing and val > best_val:\n            best_val = val; best_move = move\n        elif not is_maximizing and val < best_val:\n            best_val = val; best_move = move\n    return best_move\n\nfunc minimax(state: Dictionary, depth: int, alpha: float, beta: float, is_max: bool) -> float:\n    if depth == 0 or is_terminal(state):\n        return evaluate(state)\n    if is_max:\n        var val = -INF\n        for move in get_all_moves(state, true):\n            val = max(val, minimax(apply_move(state, move), depth-1, alpha, beta, false))\n            alpha = max(alpha, val)\n            if beta <= alpha: break\n        return val\n    else:\n        var val = INF\n        for move in get_all_moves(state, false):\n            val = min(val, minimax(apply_move(state, move), depth-1, alpha, beta, true))\n            beta = min(beta, val)\n            if beta <= alpha: break\n        return val\n\nfunc evaluate(state: Dictionary) -> float:\n    return state.ai_territory * 10.0 - state.player_territory * 10.0 + state.ai_colors * 15.0`,
       },
     ],
-  },
+  },*/
 ];
