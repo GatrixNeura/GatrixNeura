@@ -30,24 +30,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    genre: '// RPG · SURVIVAL',
-    title: 'VERDANT ECLIPSE',
-    cardTag: '// RPG · SURVIVAL',
+    genre: '// RPG · PHYSICS',
+    title: 'BOX TELEKINESIS ',
+    cardTag: '// PHYSICS',
     cardEmoji: '🌿',
     cardGradient: 'linear-gradient(135deg,#0d2a1a,#0a1a10)',
-    cardDesc: 'RPG de supervivencia en mundo abierto con generación procedural de biomas y sistema de crafting avanzado.',
-    desc: 'RPG de supervivencia en mundo abierto generado proceduralmente. El jugador explora biomas únicos, recolecta recursos y construye refugios mientras enfrenta un ecosistema dinámico con ciclos día/noche y eventos climáticos extremos.',
-    mechanics: 'Sistema de crafting por árbol de habilidades. Clima procedural con efectos sobre gameplay. NPCs con rutinas diarias y economía autónoma. Combate en tiempo real con pausa táctica.',
-    tech: ['UNITY 2023', 'C#', 'PERLIN NOISE', 'SQLITE', 'ADDRESSABLES', 'CINEMACHINE'],
+    cardDesc: 'Prueba de fisicas con la habilidad de Telekinesis.',
+    desc: 'Prueba de fisicas con la habilidad de Telekinesis. El jugador recoge un poder y es capaz de usar la Telekinesis para levantar objetos.',
+    mechanics: 'Sistema de fisicas. Sistema de Item PowerUp.',
+    tech: ['UNITY 2026', 'C#', 'CINEMACHINE'],
     meta: [
-      { l: 'DURACIÓN', v: '18 meses' },
-      { l: 'PLATAFORMA', v: 'PC / STEAM' },
+      { l: 'DURACIÓN', v: '1 semana' },
+      { l: 'PLATAFORMA', v: 'PC' },
       { l: 'ESTADO', v: 'EN DESARROLLO' },
-      { l: 'ROL', v: 'LEAD DEV' },
+      { l: 'ROL', v: 'DEV INDIE' },
     ],
     screenshots: ['🌿', '🏔️', '🌙', '⚔️'],
     files: [
-      {
+      /*{
         ext: 'CS', name: 'GameManager.cs', size: '12 KB',
         code: `using UnityEngine;\nusing System.Collections;\n\n// GameManager — Controlador principal del juego\npublic class GameManager : MonoBehaviour\n{\n    public static GameManager Instance { get; private set; }\n\n    [Header("Configuración mundial")]\n    public int seed = 42;\n    public float dayDuration = 600f;\n\n    private float currentTime = 0f;\n    private bool isPaused = false;\n\n    void Awake()\n    {\n        if (Instance != null) { Destroy(gameObject); return; }\n        Instance = this;\n        DontDestroyOnLoad(gameObject);\n        InitializeWorld();\n    }\n\n    void InitializeWorld()\n    {\n        Random.InitState(seed);\n        WorldGenerator.Instance.Generate(seed);\n        Debug.Log($"Mundo inicializado con seed: {seed}");\n    }\n\n    void Update()\n    {\n        if (isPaused) return;\n        currentTime += Time.deltaTime;\n        if (currentTime >= dayDuration)\n        {\n            currentTime = 0f;\n            OnNewDay();\n        }\n    }\n\n    void OnNewDay()\n    {\n        EventManager.Dispatch("day_changed");\n        WeatherSystem.Instance.RandomizeWeather();\n    }\n\n    public void TogglePause()\n    {\n        isPaused = !isPaused;\n        Time.timeScale = isPaused ? 0f : 1f;\n    }\n}`,
       },
@@ -63,7 +63,7 @@ export const projects: Project[] = [
         ext: 'SHADER', name: 'TerrainBlend.shader', size: '6 KB',
         code: `Shader "Custom/TerrainBlend"\n{\n    Properties\n    {\n        _OceanTex    ("Ocean",    2D) = "blue"  {}\n        _PlainsTex   ("Plains",   2D) = "green" {}\n        _ForestTex   ("Forest",   2D) = "green" {}\n        _MountainTex ("Mountain", 2D) = "grey"  {}\n    }\n    SubShader\n    {\n        Tags { "RenderType"="Opaque" }\n        CGPROGRAM\n        #pragma surface surf Lambert\n\n        sampler2D _OceanTex, _PlainsTex, _ForestTex, _MountainTex;\n\n        struct Input { float2 uv_OceanTex; float4 color : COLOR; };\n\n        void surf(Input IN, inout SurfaceOutput o)\n        {\n            float4 col = tex2D(_OceanTex,    IN.uv_OceanTex) * IN.color.r\n                       + tex2D(_PlainsTex,   IN.uv_OceanTex) * IN.color.g\n                       + tex2D(_ForestTex,   IN.uv_OceanTex) * IN.color.b\n                       + tex2D(_MountainTex, IN.uv_OceanTex) * IN.color.a;\n            o.Albedo = col.rgb;\n        }\n        ENDCG\n    }\n}`,
       },
-    ],
+    ],*/
   },
   /*{
     genre: '// SHOOTER · ROGUELITE',
