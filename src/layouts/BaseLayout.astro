@@ -1,5 +1,6 @@
 ---
 // src/layouts/BaseLayout.astro
+import '../styles/global.css';
 interface Props {
   title?: string;
 }
@@ -16,7 +17,6 @@ const { title = 'Portafolio — Dylan Fernandez' } = Astro.props;
     href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="/styles/global.css" />
 </head>
 <body>
   <!-- CRT + grid overlays rendered via CSS on body pseudo-elements -->
