@@ -2,6 +2,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://gatrixneura.github.io',
-  base: '/GatrixNeura',
+  site: 'https://GatrixNeura.github.io',
+  // sin base
 });
