@@ -7,7 +7,7 @@ const proyectos = [
     portada: "img/AstroKitt/AstroKitt.jpg",
     emoji: "🐈",
     video: "https://www.youtube.com/embed/1ruTpLwqsHg",
-    itch: "https://itch.io",
+    itch: "https://gatrix-neura.itch.io/astrokitt",
     descripcion: "Sos un gato magico que su mision es conseguir algunos materiales para que tu dueña pueda realizar magia, esos objetos son ellos mismo representados en jefes, al derrotarlos se obtiene dicho objeto.",
     mecanicas: "Sistema de ataques, Sistema de Teletransportacion.",
     tecnologias: ["Godot 4", "GdScript", "Blender", "Cloude", "Chat-GPT"],
