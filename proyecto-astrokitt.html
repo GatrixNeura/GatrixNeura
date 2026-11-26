@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstroKitt — Dylan Fernandez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="barra">
+    <a class="logo" href="index.html">Dylan Fernandez</a>
+    <nav>
+      <a href="index.html#proyectos">Proyectos</a>
+      <a href="index.html#sobre-mi">Sobre mí</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="proyecto">
+      <a class="volver" href="index.html#proyectos">← Volver a proyectos</a>
+      <br><small>Aventura</small>
+      <h1>AstroKitt</h1>
+
+      <div class="proyecto-grid">
+
+        <!-- IZQUIERDA: video y fotos -->
+        <div class="medios">
+          <!-- Video de YouTube (usá el link "embed", ejemplo: https://www.youtube.com/embed/XXXX) -->
+          <iframe class="video" src="https://www.youtube.com/embed/1ruTpLwqsHg" allowfullscreen></iframe>
+
+          <!-- Fotos: una "foto-tile" por cada foto. El emoji se ve si la imagen no existe. -->
+          <div class="fotos">
+            <div class="foto-tile"><span>🐈</span><img src="img/AstroKitt/AstroKitt-1.jpg" alt=""></div>
+            <div class="foto-tile"><span>🐈</span><img src="img/AstroKitt/AstroKitt-2.jpg" alt=""></div>
+            <div class="foto-tile"><span>🐈</span><img src="img/AstroKitt/AstroKitt-3.jpg" alt=""></div>
+            <div class="foto-tile"><span>🐈</span><img src="img/AstroKitt/AstroKitt-4.jpg" alt=""></div>
+          </div>
+        </div>
+
+        <!-- DERECHA: textos -->
+        <div class="textos">
+          <div class="bloque"><h3>Descripción</h3><p>Sos un gato magico que su mision es conseguir algunos materiales para que tu dueña pueda realizar magia, esos objetos son ellos mismo representados en jefes, al derrotarlos se obtiene dicho objeto.</p></div>
+          <div class="bloque"><h3>Mecánicas</h3><p>Sistema de ataques, Sistema de Teletransportacion.</p></div>
+          <div class="bloque"><h3>Tecnologías</h3>
+            <!-- Un <li> por tecnología -->
+            <ul class="etiquetas">
+              <li>Godot 4</li>
+              <li>GdScript</li>
+              <li>Blender</li>
+              <li>Cloude</li>
+              <li>Chat-GPT</li>
+            </ul>
+          </div>
+
+          <!-- Datos rápidos. Si no querés mostrar uno, borrá su línea. -->
+          <div class="datos-proyecto">
+            <div class="dato"><small>Duración</small><strong>1 Mes</strong></div>
+            <div class="dato"><small>Plataforma</small><strong>PC</strong></div>
+            <div class="dato"><small>Estado</small><strong>En desarrollo</strong></div>
+            <div class="dato"><small>Rol</small><strong>Lead Dev</strong></div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="titulo-archivos">Archivos del proyecto</h2>
+      <div class="panel-archivos">
+        <div class="panel-cab"><span>AstroKitt</span><span>16 archivos</span></div>
+
+        <!-- Un bloque "archivo" por cada archivo. El archivo tiene que estar en la carpeta proyectos/ -->
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">camera_Controller.gd</span>
+            <span class="peso">1.7 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/camera_Controller.gd" download="camera_Controller.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">control_interfaz.gd</span>
+            <span class="peso">2.3 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/control_interfaz.gd" download="control_interfaz.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">end_game.gd</span>
+            <span class="peso">0.6 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/end_game.gd" download="end_game.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">enemigo.gd</span>
+            <span class="peso">2.6 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/enemigo.gd" download="enemigo.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">enemigoGlobal.gd</span>
+            <span class="peso">0.3 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/enemigoGlobal.gd" download="enemigoGlobal.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">GatoKeith_PlayerController.gd</span>
+            <span class="peso">5.1 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/GatoKeith_PlayerController.gd" download="GatoKeith_PlayerController.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">linea_guia.gd</span>
+            <span class="peso">3.5 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/linea_guia.gd" download="linea_guia.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">menu_principal.gd</span>
+            <span class="peso">0.6 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/menu_principal.gd" download="menu_principal.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">MisionesGlobal.gd</span>
+            <span class="peso">2.4 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/MisionesGlobal.gd" download="MisionesGlobal.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">mundoController.gd</span>
+            <span class="peso">0.1 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/mundoController.gd" download="mundoController.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">NamNam.gd</span>
+            <span class="peso">0.7 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/NamNam.gd" download="NamNam.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">nota_Intro.gd</span>
+            <span class="peso">1.2 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/nota_Intro.gd" download="nota_Intro.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">PlayerInfoGlobal.gd</span>
+            <span class="peso">0.1 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/PlayerInfoGlobal.gd" download="PlayerInfoGlobal.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">posicionGlobal.gd</span>
+            <span class="peso">0.1 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/posicionGlobal.gd" download="posicionGlobal.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">Puerta_casaPrincipal.gd</span>
+            <span class="peso">0.9 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/Puerta_casaPrincipal.gd" download="Puerta_casaPrincipal.gd">Ver</a>
+          </div>
+        </div>
+        <div class="archivo">
+          <div class="fila">
+            <span class="ext">gd</span>
+            <span class="nombre">vida_Controller.gd</span>
+            <span class="peso">0.5 KB</span>
+            <a class="dl" href="proyectos/AstroKitt/vida_Controller.gd" download="vida_Controller.gd">Ver</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón de Itch.io (cambiá el link) -->
+      <a class="boton itch" href="https://itch.io" target="_blank" rel="noopener">Ver en Itch.io</a>
+    </section>
+  </main>
+
+  <footer>© 2026 Dylan Fernandez — Game Developer</footer>
+
+</body>
+</html>
