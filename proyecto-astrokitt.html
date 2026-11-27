@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstroKitt — Dylan Fernandez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="barra">
+    <a class="logo" href="index.html">Dylan Fernandez</a>
+    <nav>
+      <a href="index.html#proyectos">Proyectos</a>
+      <a href="index.html#sobre-mi">Sobre mí</a>
+      <a href="index.html#contacto">Contacto</a>
+      <button id="boton-modo" class="cambiar-modo" type="button" aria-label="Cambiar entre modo oscuro y modo claro">☀️</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="proyecto">
+      <a class="volver" href="index.html#proyectos">← Volver a proyectos</a>
+      <br><small>Aventura</small>
+      <h1>AstroKitt</h1>
+
+      <div class="proyecto-grid">
+
+        <!-- IZQUIERDA: video y fotos -->
+        <div class="medios">
+          <iframe class="video" src="https://www.youtube.com/embed/1ruTpLwqsHg" allowfullscreen></iframe>
+
+          <!-- Fotos: una "foto-tile" por cada foto. El emoji se ve si la imagen no existe. -->
+          <div class="fotos">
+            <div class="foto-tile"><span>🐈</span><img src="img/AstroKitt/AstroKitt-1.jpg" alt=""></div>
+            <div class="foto-tile"><span>🐈</span><img src="img/AstroKitt/AstroKitt-2.jpg" alt=""></div>
+            <div class="foto-tile"><span>🐈</span><img src="img/AstroKitt/AstroKitt-3.jpg" alt=""></div>
+            <div class="foto-tile"><span>🐈</span><img src="img/AstroKitt/AstroKitt-4.jpg" alt=""></div>
+          </div>
+        </div>
+
+        <!-- DERECHA: textos -->
+        <div class="textos">
+          <div class="bloque"><h3>Descripción</h3><p>Sos un gato magico que su mision es conseguir algunos materiales para que tu dueña pueda realizar magia, esos objetos son ellos mismo representados en jefes, al derrotarlos se obtiene dicho objeto.</p></div>
+          <div class="bloque"><h3>Mecánicas</h3><p>Sistema de ataques, Sistema de Teletransportacion.</p></div>
+          <div class="bloque"><h3>Tecnologías</h3>
+            <ul class="etiquetas">
+              <li>Godot 4</li>
+              <li>GdScript</li>
+              <li>Blender</li>
+              <li>Cloude</li>
+              <li>Chat-GPT</li>
+            </ul>
+          </div>
+
+          <div class="datos-proyecto">
+            <div class="dato"><small>Duración</small><strong>1 Mes</strong></div>
+            <div class="dato"><small>Plataforma</small><strong>PC</strong></div>
+            <div class="dato"><small>Estado</small><strong>En desarrollo</strong></div>
+            <div class="dato"><small>Rol</small><strong>Lead Dev</strong></div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="titulo-archivos">Archivos del proyecto</h2>
+      <div class="panel-archivos">
+        <div class="panel-cab"><span>AstroKitt</span><span>GitHub</span></div>
+        <div class="enlace-archivos">
+          <p>El código y los recursos de este proyecto están en un repositorio de GitHub, donde podés verlos y descargarlos.</p>
+          <a class="boton" href="https://github.com/gatrixneura" target="_blank" rel="noopener">Ver archivos en GitHub</a>
+        </div>
+      </div>
+
+      <!-- Botón de Itch.io -->
+      <a class="boton itch" href="https://gatrixabrain.itch.io/astrokitt" target="_blank" rel="noopener">Ver en Itch.io</a>
+    </section>
+  </main>
+
+  <footer>© 2026 Dylan Fernandez — Game Developer</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
