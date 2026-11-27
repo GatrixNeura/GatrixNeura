@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio — Dylan Fernandez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="barra">
+    <a class="logo" href="#inicio">Dylan Fernandez</a>
+    <nav>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+      <button id="boton-modo" class="cambiar-modo" type="button" aria-label="Cambiar entre modo oscuro y modo claro">🌞</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+      <h1>Game Designer Developer</h1>
+      <p class="intro">Soy Dylan, desarrollador de videojuegos. Combino mecánicas sólidas, arte procedural y narrativa. Acá muestro cómo hice cada proyecto: fotos, herramientas y archivos.</p>
+      <p class="datos">1+ proyectos · 1 años de experiencia · 1 game jams</p>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <!--
+      TARJETAS DE PROYECTOS
+      Para agregar un proyecto nuevo: copiá una tarjeta completa
+      (desde <a class="tarjeta" ...> hasta </a>), pegala abajo y cambiá
+      el link (href), la foto, el emoji y los textos.
+      El link tiene que ser el nombre de la página del proyecto.
+      -->
+      <div class="grilla">
+      <a class="tarjeta" href="proyecto-astrokitt.html">
+        <div class="portada">
+          <span>🐈</span>
+          <img src="img/AstroKitt/AstroKitt.jpg" alt="">
+        </div>
+        <div class="info">
+          <small>Aventura</small>
+          <h3>AstroKitt</h3>
+          <p>Sos un gato magico que su mision es conseguir algunos materiales para que tu dueña pueda realizar magia, esos objetos son ellos mismo representados en jefes, al derrotarlos se obtiene dicho objeto.</p>
+          <ul class="etiquetas"><li>Godot 4</li><li>GdScript</li><li>Blender</li><li>Cloude</li><li>Chat-GPT</li></ul>
+        </div>
+      </a>
+      <a class="tarjeta" href="proyecto-unviejoenapuros.html">
+        <div class="portada">
+          <span>⚔️</span>
+          <img src="img/UnViejoEnApuros/UnViejoEnApuros.jpg" alt="">
+        </div>
+        <div class="info">
+          <small>Aventura - RPG</small>
+          <h3>UnSeñorEnApuros</h3>
+          <p>Sos un aventurero que en su viaje se topa con una señorita en problemas en donde acudes a ayudarla</p>
+          <ul class="etiquetas"><li>RPG-Maker</li></ul>
+        </div>
+      </a>
+      <a class="tarjeta" href="proyecto-nave-espacial.html">
+        <div class="portada">
+          <span>🚀</span>
+          <img src="img/NaveEspacial/NaveEspacial.jpg" alt="">
+        </div>
+        <div class="info">
+          <small>Aventura</small>
+          <h3>Nave Espacial</h3>
+          <p>Tu manejas una nave y una oleada de enemigos trata de eliminarte</p>
+          <ul class="etiquetas"><li>Scratch</li></ul>
+        </div>
+      </a>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="sobre">
+        <div class="foto">
+          <span>DF</span>
+          <img src="img/FotoPerfil.jpg" alt="Foto de Dylan" onerror="this.remove()">
+        </div>
+        <div>
+          <p>Soy Dylan Fernandez, desarrollador de videojuegos con 1 año de experiencia creando proyectos independientes, de momento hago juegos interactivos y de aventura.</p>
+          <p>Estoy orientado mas a la programacion, integrar sistemas complejos: IA de comportamiento, generación procedural y audio reactivo. Trabajo como desarrollador principal o como programador en equipos pequeños, y disfruto las game jams.</p>
+          <ul class="etiquetas">
+            <li>Unity</li><li>C#</li><li>Godot 4</li><li>Blender</li><li>Shaders</li><li>Git</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="doble">
+        <div>
+          <h3>Experiencia</h3>
+          <article><h4>Lead Developer — Proyectos Indie</h4><small>Freelance · 2026 – Presente</small><p>Desarrollo completo de videojuegos: diseño, programación, audio y publicación.</p></article>
+          <article><h4>Programador Junior</h4><small>Estudio indie local · 2026 – Presente</small><p>Mecánicas y sistemas de juego en Unity, junto al equipo de arte y niveles.</p></article>
+        </div>
+        <div>
+          <h3>Educación</h3>
+          <article><h4>Licenciatura en Desarrollo de Videojuegos</h4><small>Unpaz · 2026 – Presente</small><p>Programación, diseño de juegos, gráficos 3D y audio interactivo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tenés un proyecto o querés charlar de videojuegos? Escribime a <a href="mailto:Dylanfer.enterprise@gmail.com">Dylanfer.enterprise@gmail.com</a> o usá el formulario.</p>
+      <!-- Al enviar, se abre el programa de correo del visitante con el mensaje. -->
+      <form action="mailto:Dylanfer.enterprise@gmail.com" method="post" enctype="text/plain">
+        <label>Tu nombre <input name="nombre" required></label>
+        <label>Tu email <input name="email" type="email" required></label>
+        <label>Asunto <input name="asunto" required></label>
+        <label>Mensaje <textarea name="mensaje" rows="5" required></textarea></label>
+        <button class="boton" type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 Dylan Fernandez — Game Developer</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
