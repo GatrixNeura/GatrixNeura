@@ -1,0 +1,65 @@
+﻿AstroKitt
+
+
+Link del diagrama de flujo: https://miro.com/welcomeonboard/azhObUI2Z2I5aEJtYjRnYnFvMWxPSDhweXZPNkJLalpCeWtzN3k4UnZyS3VvNjBpUFFDMVFIaVFVWXl0WnRWbVByanpLOENVeUQvVjg0Mks2U3J3NFp1VUdRRFdrUGlhNFRvZHZEdXF5SGlkTEs1a244ajFrME16bzhsaS8zL2lNakdSWkpBejJWRjJhRnhhb1UwcS9BPT0hdjE=?share_link_id=406799517930
+
+
+Link del Drive: https://drive.google.com/drive/folders/1fSARo2m97I9bI0PQvyIKBWbzq61wP2Nj?usp=sharing
+
+
+
+
+AstroKitt
+
+
+Trata de un gato mágico el cual tiene su dueña que estudia magia, está le deja una nota con una lista de objetos que el gato tendrá que conseguir para que ella pueda seguir con sus estudios.
+Cada objeto se consigue derrotando a ellos mismos representados en jefes, así que cada objeto es un desafío en dónde el gato tendrá que pelear y usar sus diversas habilidades para superar esos desafíos.
+
+
+  
+
+Al empezar se nos muestra al gato en su casa inicial con una nota que nos dice que hacer durante todo el juego, una vez leída la nota podemos salir de la casa explorando y dando la bienvenida al pueblo en donde se encontrara con varios desafios.
+  
+La nota está programada para cuando nos acerquemos esta muestra un panel que nos dice que botón apretar para interactuar, al apretarlo y estar cerca nos muestra la nota, se pausa el juego y luego con el escape podemos salir de esta y el juego se reanuda y activa las misiones haciendo que el menú de la interfaz se actualice mostrandola.
+      
+
+
+Luego de esto nos acercame a la puerta y esta nos dice que apretando al E podemos salir.
+  
+La puerta funciona con un metodo en donde le pasamos 2 parametros Editables desde el panel del inspector, en el primero tendremos que ponder la escena a la que queremos ir y en la 2da tendremos que poner donde va a aparecer el gato, dicho objeto es un Marker3D que solo sirve para asignarle un nombre y ponerlo donde querramos.
+  
+
+
+al estar en el mundo una flecha no indica hacia donde tenemos que ir.
+  
+
+
+Al llegar a la ubicacion nos encontramos con 4 ratas a la que tendremos que matar, estas mismas nos empiezan a perseguir y nos sacan vida.
+  
+  
+En el código hay un sistema que sirve para que el enemigo reciba daño y actualice su barra de vida, además hay un sistema en donde si el enemigo está cerca del jugador, este lo persigue hasta que el player salga del radio de detección.
+
+
+Al termina de matar a las 4 ratas cada muerte actualiza el contador de la misiones globales.
+  
+
+En este script se almacena toda la informacion de las misiones y se comprueba si la mision se activo como vimos al momento de leer la nota, si se completo como en el caso de las ratas y si esta en proceso.
+  
+
+En el script de la interfaz obtenemos la información de las misiones y si estas estan activas se escribe en su apartado la información de las misiones con su contado para saber cuanto falta, al finalizar la mision, esta se tacha y muestra un OK en color verde.
+  
+
+
+Al completar la primera mision la flecha se actualiza y nos dice donde esta la segunda mision.
+  
+
+Al entrar por esa puerta nuevamente nos lleva a otra escena y al luar deseado, en dicha escena esta el jefe Rata.
+  
+
+El script de este jefe es el mismo que el de las ratas, pero tiene mas vida y hace mas daño.
+
+
+Al derrotarlo nos muestra la proxima mision, pero aun esta en desarrollo.
+
+
+Videos GamePlays y demas archivos: https://drive.google.com/drive/folders/1fSARo2m97I9bI0PQvyIKBWbzq61wP2Nj?usp=sharing

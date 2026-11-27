@@ -1,0 +1,40 @@
+﻿Nuestro juego trata de que empezamos de la nada caminando por un bosque y nos encontramos con la problemática de que una nena se nos acerca pidiendo ayuda, resulta que su abuelo esta siendo atacado por unos monstruos y nos dice que vayamos a ayudar, al ir para ayudar nos enfrentamos a 3 bichos y logramos rescatar al anciano, este nos da las gracias y nos permite seguir avanzando dejando que nos quedemos con la recompensa nosotros, ya que le ayudamos, entonces pasamos y logramos abrir el cofre que sin haber matado a los bichos no podríamos haber hecho. 
+Al Empezar el juego nos encontramos en lo que parece ser un bosque con un camino que aun no sabemos hacia donde lleva. 
+  
+
+Al caminar nos topamos con un mensaje de ayuda, se trata de una nena que pide ayuda, nos dice que su abuelo esta atrapado entre monstruos.
+  
+  
+Este sistema funciona por sensores que al pisarlos ejecutan la aniumacion de la chica yendo hacia nosotros para pedirnos ayuda.
+  
+
+  
+
+Los sensores de los costados son para ir de mapa en mapa, al pisarlos nos teletransporta al proximo mapa. 
+  
+
+Al ir al siguiente mapa nos encontramos con unos bichos que hay que eliminar para salvar al abuelo de la chica.
+  
+
+Dichos combates son los clásicos de un juego de rol por turnos y cuando eliminamos a un enemigo este cambia de apariencia, simulando que se murió. 
+  
+  
+
+Todos los enemigos tienen la misma comportacion, lo unico que cambia es su ruta personalizada, es decir, como se mueven.
+  
+  
+  
+
+Al eliminaratodos losbichospodemoshablarconel abuelo, dondeorgullosamentenos agradece…
+  
+
+  
+
+  
+
+
+Luego, al igual que antes, podemos avanzar de mapa hacia el próximo, donde vemos que hay una recompensa que nos espera, un cofre que al abrirlo comprueba si tenemos la misión hecha y si es así nos da la recompensa.
+
+
+TODOS LOS ARCHIVOS EN EL SIGUIENTE DRIVE: 
+https://drive.google.com/drive/folders/1ZoiLI6x6Ewx7t4Hcy_uKmg6zcWlr05jP?usp=sharing
